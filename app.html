@@ -286,7 +286,7 @@
             btn.disabled = true; btn.textContent = 'Loading...';
             out.innerHTML = '<p class="msg">Fetching leaderboard...</p>';
             try {
-                const html = await (await fetch('https://kolscan.io/leaderboard')).text();
+                const html = await (await fetch('https://api.allorigins.win/raw?url=https://kolscan.io/leaderboard')).text();
                 const re = /\{\\"wallet_address\\":\\"([^\\]+)\\",\\"name\\":\\"([^\\]*)\\",\\"telegram\\":([^,]+),\\"twitter\\":([^,]+),\\"profit\\":([\d.eE+-]+),\\"wins\\":(\d+),\\"losses\\":(\d+),\\"timeframe\\":(\d+)\}/g;
                 const traders = [];
                 let m;
