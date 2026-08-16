@@ -1,5 +1,5 @@
 /* Crypto Toolkit — service worker: cache the app shell for offline use */
-const CACHE = "crypto-toolkit-v1";
+const CACHE = "crypto-toolkit-v2";
 const SHELL = ["./app.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
